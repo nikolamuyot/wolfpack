@@ -1,0 +1,105 @@
+#main-navbar {
+  color: #000000;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0;
+  flex-wrap: wrap;
+}
+
+.navbar-brand {
+  order: 1;
+  text-align: center;
+}
+.nav-link {
+  color: #000000 !important; /* Add this to make the navbar links black */
+}
+
+.navbar-nav {
+  align-items: center; /* Add this to vertically align the navbar items */
+  justify-content: center; /* Add this to horizontally center the navbar items */
+  flex: 1; /* Add this to give equal space on both sides of the navbar-brand */
+}
+
+.navbar-nav:first-child {
+  order: 0;
+}
+
+.navbar-nav:last-child {
+  order: 2;
+}
+
+.navbar-brand img {
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #ffdb58;
+  color: #000000;
+  font-family: "Cinzel Decorative", serif;
+}
+
+.container-wolf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container-wolf h1,
+.container-wolf h3 {
+  width: 100%;
+  text-align: center;
+}
+
+body {
+  background-color: #ffdb58;
+  color: #000000;
+  font-family: "Cinzel Decorative", serif;
+}
+
+.nav-item {
+  position: relative;
+  display: block;
+}
+
+body {
+  background-color: #ffdb58;
+}
+.banner {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.profile-picture {
+  width: 50%; /* Make the profile picture half the width of the banner */
+  height: 50%;
+  position: absolute; /* Position the profile picture absolutely within the banner */
+  left: 5%;
+  top: 25%;
+  display: flex;
+  align-items: center;
+  border-radius: 70%;
+}
+
+.profile-picture img {
+  max-width: 100%; /* Make the image fill the profile picture div */
+  max-height: 100%; /* Let the image height adjust automatically to maintain aspect ratio */
+  object-fit: cover; /* Make the image cover the entire div */
+  border-radius: 70%; /* Make the image round */
+}
+.soundcloud-embed {
+  text-align: center;
+}
