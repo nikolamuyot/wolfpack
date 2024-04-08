@@ -152,21 +152,23 @@ body.reach-out {
   border-radius: 5px;
   cursor: pointer;
 }
-
 .merch-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
 }
 
 .merch-item {
   width: 300px;
   height: 400px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px;
   box-sizing: border-box;
+  background-color: #002147;
+  margin: 10px; /* Added margin */
+  overflow: auto; /* Added overflow */
+  color: #ffffff; /* Added this */
 }
 
 .merch-item img {
@@ -184,5 +186,46 @@ body.reach-out {
 .merch-item p {
   margin-top: 5px;
   font-size: 14px;
-  color: #888;
+  color: #ffffff;
+}
+@media (max-width: 600px) {
+  #main-navbar {
+    flex-direction: column;
+  }
+
+  .navbar-brand {
+    order: 0;
+  }
+
+  .navbar-nav:first-child,
+  .navbar-nav:last-child {
+    order: 1;
+  }
+
+  .navbar-brand img {
+    height: 30px;
+  }
+
+  .profile-picture {
+    width: 70%;
+    height: 70%;
+    left: 15%;
+    top: 15%;
+  }
+
+  .form-contact.container {
+    width: 90%;
+    height: 90%;
+  }
+
+  .merch-item {
+    width: 100%;
+  }
+}
+
+.back-button,
+.back-button:visited,
+.back-button:hover,
+.back-button:active {
+  color: #ffffff;
 }
