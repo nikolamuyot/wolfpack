@@ -152,6 +152,10 @@ body.reach-out {
   border-radius: 5px;
   cursor: pointer;
 }
+.form-group button:hover {
+  background-color: #bbbbbb; /* Change this to the color you want when hovered */
+}
+
 .merch-container {
   display: flex;
   flex-wrap: wrap;
