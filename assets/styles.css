@@ -84,22 +84,24 @@ body {
 }
 
 .profile-picture {
-  width: 50%; /* Make the profile picture half the width of the banner */
-  height: 50%;
+  width: 200px; /* Make the profile picture a small circle */
+  height: 200px; /* Make the profile picture a small circle */
   position: absolute; /* Position the profile picture absolutely within the banner */
   left: 5%;
   top: 25%;
   display: flex;
   align-items: center;
-  border-radius: 70%;
+  border-radius: 50%; /* Adjust this to 50% for a perfect circle */
+  overflow: hidden; /* Hide any content that exceeds the circular shape */
 }
 
 .profile-picture img {
-  max-width: 100%; /* Make the image fill the profile picture div */
-  max-height: 100%; /* Let the image height adjust automatically to maintain aspect ratio */
+  width: 100%; /* Make the image fill the profile picture div */
+  height: 100%; /* Let the image height adjust automatically to maintain aspect ratio */
   object-fit: cover; /* Make the image cover the entire div */
-  border-radius: 70%; /* Make the image round */
+  border-radius: 50%; /* Make the image round */
 }
+
 .soundcloud-embed {
   text-align: center;
 }
